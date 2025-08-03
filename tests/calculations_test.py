@@ -86,6 +86,13 @@ def test_get_nth_fibonacci_negative(self):
     # Arrange
     n = -1
 
+    # Act
+    result = get_nth_fibonacci(n)
+    
+    # Assert
+    assert result == -1
+
+    
     # Act & Assert
     with self.assertRaises(ValueError):
        get_nth_fibonacci(n)
